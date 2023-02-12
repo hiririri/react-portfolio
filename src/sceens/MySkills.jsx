@@ -25,7 +25,8 @@ const MySkills = () => {
                     </p>
                     <LineGradient />
                     <p className="mt-10 mb-7">
-                        aiubfiuasfoijqeorisdbnfiuahifuaisfbr.
+                        My interest in Computer Science started back in 2018, begining by printing a "Hello World" in Java console. 
+                        Turns out "hacking" could be so much fun within a few lines of code.
                     </p>
                 </motion.div>
 
@@ -51,7 +52,7 @@ const MySkills = () => {
                 </div>
             </div>
             {/* SKILLS */}
-            <div className="md:flex md:justify-between mt-16 gap-32">
+            <div className="md:flex md:justify-between mt-16 gap-16">
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
@@ -75,9 +76,8 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
                     </div>
                     <p className="mt-5">
-                        A auctor pharetra hendrerit mattis amet etiam interdum
-                        platea. Est morbi porttitor scelerisque fermentum,
-                        sagittis non egestas. Amet odio sit sagittis,
+                        I worked as an IT apprentice at Maugars Industrie where I gained my first 
+                        experience in software developement using WinDev and PHP.
                     </p>
                 </motion.div>
 
@@ -99,12 +99,15 @@ const MySkills = () => {
                                 02
                             </p>
                             <p className="font-playfair font-semibold text-5xl mt-3">
-                                Innovative
+                                Autonomie
                             </p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
                     </div>
-                    <p className="mt-5">adfjblknqewiruhinafk;ewjtoijhweoirn.</p>
+                    <p className="mt-5">
+                        Strong ability for self-study through my experience and projects, 
+                        driving me to continuously improve my knowledge for any needed.
+                    </p>
                 </motion.div>
 
                 {/* IMAGINATIVE */}
@@ -125,12 +128,14 @@ const MySkills = () => {
                                 03
                             </p>
                             <p className="font-playfair font-semibold text-5xl mt-3">
-                                Imaginative
+                                Adaptability
                             </p>
                         </div>
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
                     </div>
-                    <p className="mt-5">adfjblknqewiruhinafk;ewjtoijhweoirn.</p>
+                    <p className="mt-5">
+                        Cappeble of adjusting to changing situations and environments quickly.
+                    </p>
                 </motion.div>
             </div>
         </section>

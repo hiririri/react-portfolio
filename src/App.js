@@ -17,8 +17,23 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY === 0) setIsTopOfPage(true);
-      else setIsTopOfPage(false);
+      console.log(window.scrollY);
+      if (window.scrollY !== 0)
+        setIsTopOfPage(false);
+      if (window.scrollY === 0)
+        setIsTopOfPage(true);
+      if (window.scrollY >= 0 && window.scrollY <= 710) {
+        setSelectedPage("home");
+      }
+      else if (window.scrollY <= 1455) {
+        setSelectedPage("skills");
+      }
+      else if (window.scrollY <= 2277) {
+        setSelectedPage("testimonials");
+      }
+      else {
+        setSelectedPage("contact");
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -41,14 +56,14 @@ function App() {
         <Landing setSelectedPage={setSelectedPage} />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto">
           <MySkills />
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      {/* <div className="w-5/6 mx-auto">
           <Projects />
       </div>
-      <LineGradient />
+      <LineGradient /> */}
       <div className="w-5/6 mx-auto md:h-full">
           <Testimonials />
       </div>

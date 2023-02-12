@@ -20,17 +20,17 @@ const Landing = ({ setSelectedPage }) => {
                     >
                         <img
                             alt="profile"
-                            src={require('../assets/profile-image.png')}
+                            src={require('../assets/self.jpg')}
                             className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-                            max-w-[400px] md:max-w-[600px]"
+                            max-w-[400px] md:max-w-[600px] oobject-scale-down h-100 w-70 before:rounded-t-[400px]"
                         />
                     </div>
                 ) : (
                     <img
                         alt="profile"
-                        src={require('../assets/profile-image.png')}
+                        src={require('../assets/self.jpg')}
                         className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-                        max-w-[400px] md:max-w-[600px]"
+                        max-w-[400px] md:max-w-[600px] rounded-full"
                     />
                 )}
             </div>
@@ -60,7 +60,9 @@ const Landing = ({ setSelectedPage }) => {
                     </p>
 
                     <p className="mt-10 mb-7 text-sm text-center md:text-start">
-                        asdasdafjhvwejhbflkjabfkjebwhjkfbwejkfbkjfb
+                        I am a passionate software developer studying for a Bachelor's degree in Computer Science at the University of Paris-Dauphine PSL, 
+                        also a bboy passionate about the dynamic and expressive world. Currently learning to be a fullstack developer, I created this website
+                        while learning React.js to practice.
                     </p>
                 </motion.div>
 

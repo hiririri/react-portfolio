@@ -2,7 +2,7 @@ import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
 const Tesimonials = () => {
-    const testimonialsStyles = `mx-auto relative max-w-[400px] h-[350px] flex flex-col justify-end p-16 mt-48 
+    const testimonialsStyles = `mx-auto mr-10 relative max-w-[400px] h-[350px] justify-end p-16 mt-50
                                 before:absolute before:top-[-120px] before:-ml-[110px] before:left-1/2`;
 
     return (
@@ -24,7 +24,7 @@ const Tesimonials = () => {
                 </p>
                 <LineGradient />
                 <p className="mt-10">
-                    aiubfiuasfoijqeorisdbnfiuahifuaisfbr.
+                    Here's What People are Saying About My Work.
                 </p>
             </motion.div>
 
@@ -42,35 +42,11 @@ const Tesimonials = () => {
                     }}
                 >
                     <p className="font-playfair text-6xl">"</p>
-                    <p className="text-center text-xl">blablablablabla</p>
-                </motion.div>
-                <motion.div
-                    className={`bg-red ${testimonialsStyles} before:content-person2`}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{delay: 0.2, duration: 0.5 }}
-                    variants={{
-                        hidden: { opacity: 0, scale: 0.8 },
-                        visible: { opacity: 1, scale: 1 },
-                    }}
-                >
-                    <p className="font-playfair text-6xl">"</p>
-                    <p className="text-center text-xl">blablablablabla</p>
-                </motion.div>
-                <motion.div
-                    className={`bg-yellow ${testimonialsStyles} before:content-person3`}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    transition={{delay: 0.2, duration: 0.5 }}
-                    variants={{
-                        hidden: { opacity: 0, scale: 0.8 },
-                        visible: { opacity: 1, scale: 1 },
-                    }}
-                >
-                    <p className="font-playfair text-6xl">"</p>
-                    <p className="text-center text-xl">blablablablabla</p>
+                    <p className="text-center text-0.5xl mt-5">
+                        Thank you Qinming, I was delighted to work with you for a year. You have successfully shown your seriousness, 
+                        motivation and ability to learn new skills. We will miss your good mood and positive spirit, 
+                        I wish you a good continuation!
+                    </p>
                 </motion.div>
             </div>
         </section>

@@ -20,13 +20,13 @@ const DotGroup = ({ selectedPage, setSelectedPage }) => {
                 onClick={() => setSelectedPage('skills')}
             >
             </AnchorLink>
-            <AnchorLink
+            {/* <AnchorLink
                 className={`${selectedPage === 'projects' ? selectedStyles : "bg-dark-grey"} 
                             w-3 h-3 rounded-full`}
                 href={`#projects`}
                 onClick={() => setSelectedPage('projects')}
             >
-            </AnchorLink>
+            </AnchorLink> */}
             <AnchorLink
                 className={`${selectedPage === 'testimonials' ? selectedStyles : "bg-dark-grey"} 
                             w-3 h-3 rounded-full`}
